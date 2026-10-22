@@ -64,3 +64,6 @@ h2.label { border-top: 0; padding-top: 0; margin: 32px 0 12px; font-size: 14px; 
 }
 .home .links a:last-child { border-bottom: 0; }
 .biz a { color: var(--muted); }
+.store-buttons { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 12px; }
+.store-btn { display: inline-block; padding: 10px 16px; border-radius: 12px; background: var(--text); color: var(--bg); font-size: 15px; font-weight: 600; text-decoration: none; }
+.store-btn.soon { background: transparent; color: var(--muted); border: 1px solid var(--line); font-weight: 400; }
