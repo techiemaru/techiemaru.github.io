@@ -3,7 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>오늘지출</title>
+<title>오늘지출 - 지출만 기록하는 가계부</title>
+<meta name="description" content="회원가입·카드 연동 없이 쓴 돈만 빠르게 기록하는 가계부. 지출 기록은 내 폰에만 저장돼요.">
+<meta property="og:title" content="오늘지출 - 지출만 기록하는 가계부">
+<meta property="og:description" content="회원가입·카드 연동 없이 쓴 돈만 빠르게 기록하는 가계부. 지출 기록은 내 폰에만 저장돼요.">
+<meta property="og:image" content="https://techiemaru.github.io/img/todayspend-icon.png">
+<meta property="og:url" content="https://techiemaru.github.io/todayspend/">
 <link rel="icon" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="/style.css">
@@ -11,18 +16,136 @@
 <body>
 <main>
   <p class="back"><a href="/">← 테키마루</a></p>
-  <h1>오늘지출</h1>
-  <p class="muted">지출만 기록하는 가계부</p>
-  <p>카드·계좌 연동 없이, 회원가입 없이, 쓴 돈만 빠르게 적는 앱입니다.
-  지출 기록은 기기 안에만 저장됩니다.</p>
-  <div class="store-buttons">
-    <a class="store-btn" href="https://apps.apple.com/kr/app/id6824415997">App Store에서 받기</a>
-    <span class="store-btn soon">Google Play 곧 출시</span>
+
+  <section class="app-hero">
+    <img class="app-icon" src="/img/todayspend-icon.png" alt="" width="88" height="88">
+    <h1>오늘지출</h1>
+    <p class="sub">지출만 기록하는 가계부</p>
+    <p class="lead">돈 쓴 직후 3초면 끝나요.<br>회원가입도, 카드·계좌 연동도 없어요.</p>
+    <div class="store-buttons">
+      <a class="store-btn" href="https://apps.apple.com/kr/app/id6824415997">App Store에서 받기</a>
+      <span class="store-btn soon">Google Play 곧 출시</span>
+    </div>
+  </section>
+
+  <h2 class="label">이런 앱이에요</h2>
+  <div class="features">
+    <section class="feature">
+      <div>
+        <h3>열면 바로 금액 입력</h3>
+        <p>앱을 열면 숫자 키패드가 먼저 나와요. 금액 누르고 카테고리 고르면 저장 끝이에요.</p>
+        <ul>
+          <li>최근 기록을 한 번 눌러 그대로 다시 쓰기</li>
+          <li>앱 아이콘을 길게 눌러 바로 입력</li>
+        </ul>
+      </div>
+      <img class="shot" src="/img/todayspend-1-input.jpg" alt="금액 입력 화면" width="460" height="1000" loading="lazy">
+    </section>
+
+    <section class="feature">
+      <div>
+        <h3>이번 달 얼마 썼는지 한눈에</h3>
+        <p>첫 화면에서 이번 달 지출, 오늘 쓴 돈, 예산이 얼마 남았는지 바로 보여요.</p>
+      </div>
+      <img class="shot" src="/img/todayspend-2-home.jpg" alt="이번 달 지출과 최근 기록 화면" width="460" height="1000" loading="lazy">
+    </section>
+
+    <section class="feature">
+      <div>
+        <h3>달력으로 보는 내역</h3>
+        <p>날짜마다 쓴 돈이 달력에 적혀 있어요. 날짜를 누르면 그날 쓴 것만 볼 수 있어요.</p>
+        <ul>
+          <li>검색</li>
+          <li>카테고리·결제수단으로 골라 보기</li>
+        </ul>
+      </div>
+      <img class="shot" src="/img/todayspend-3-history.jpg" alt="달력과 날짜별 내역 화면" width="460" height="1000" loading="lazy">
+    </section>
+
+    <section class="feature">
+      <div>
+        <h3>어디에 많이 썼는지 통계로</h3>
+        <p>카테고리별 비중과 날짜별 흐름을 그래프로 보여 줘요. 지난달 같은 날까지와 비교도 돼요.</p>
+        <ul>
+          <li>월 예산의 80%, 100%를 넘으면 알림</li>
+        </ul>
+      </div>
+      <img class="shot" src="/img/todayspend-4-stats.jpg" alt="카테고리별 통계 화면" width="460" height="1000" loading="lazy">
+    </section>
+
+    <section class="feature">
+      <div>
+        <h3>귀찮은 건 자동으로</h3>
+        <p>월세·구독 같은 고정 지출은 정해진 날 알아서 기록돼요.</p>
+        <ul>
+          <li>저녁마다 "오늘 쓴 거 기록했어요?" 알림 (기록이 있으면 오지 않아요)</li>
+          <li>월급날에 맞춰 한 달 시작일 바꾸기</li>
+          <li>Face ID·지문으로 앱 잠금</li>
+        </ul>
+      </div>
+      <img class="shot" src="/img/todayspend-5-settings.jpg" alt="설정 화면" width="460" height="1000" loading="lazy">
+    </section>
   </div>
+
+  <h2 class="label">무료와 Pro</h2>
+  <div class="plans">
+    <div class="plan">
+      <h3>무료</h3>
+      <p class="price">기록과 기본 통계는 모두 무료</p>
+      <ul>
+        <li>지출 기록, 달력, 검색</li>
+        <li>이번 달·지난달 통계</li>
+        <li>백업 파일 만들기·복원</li>
+        <li>앱 잠금, 다크 모드</li>
+        <li>직접 만드는 카테고리 5개, 고정 지출 3개</li>
+      </ul>
+    </div>
+    <div class="plan pro">
+      <h3>Pro</h3>
+      <p class="price">₩2,900 · 한 번 결제, 평생 이용</p>
+      <ul>
+        <li>모든 광고 제거</li>
+        <li>지난 통계 모두 보기</li>
+        <li>카테고리·고정 지출 개수 제한 없음</li>
+        <li>CSV로 내보내기 (엑셀·구글 시트)</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="label">자주 묻는 질문</h2>
+  <div class="faq">
+    <details>
+      <summary>지출 기록은 어디에 저장되나요?</summary>
+      <p>내 휴대폰 안에만 저장돼요. 어디에도 보내지 않기 때문에, 앱을 지우면 기록도 함께 지워져요. 중요한 기록은 백업 파일을 만들어 두세요.</p>
+    </details>
+    <details>
+      <summary>휴대폰을 바꾸면 기록을 옮길 수 있나요?</summary>
+      <p>네. 쓰던 폰에서 설정 → 데이터 → [백업 파일 만들기]로 파일을 만들어 저장해 두고, 새 폰에서 [백업에서 복원]으로 그 파일을 고르면 돼요.</p>
+    </details>
+    <details>
+      <summary>Pro는 구독인가요?</summary>
+      <p>아니요. ₩2,900을 한 번만 결제하면 계속 쓸 수 있어요. 매달 돈이 나가지 않아요.</p>
+    </details>
+    <details>
+      <summary>휴대폰을 바꾸면 Pro를 다시 사야 하나요?</summary>
+      <p>같은 앱스토어(또는 구글) 계정이라면 다시 살 필요 없어요. 설정 → [Pro로 업그레이드] → [구매 복원]을 눌러 주세요. 다만 아이폰과 안드로이드 사이에서는 구매가 옮겨지지 않아요.</p>
+    </details>
+    <details>
+      <summary>광고가 많이 나오나요?</summary>
+      <p>설치 후 3일 동안은 광고가 없고, 그 뒤에도 금액 입력 화면에는 나오지 않아요. 광고를 아예 없애려면 Pro를 이용해 주세요.</p>
+    </details>
+    <details>
+      <summary>안드로이드에서도 쓸 수 있나요?</summary>
+      <p>구글 플레이 출시를 준비하고 있어요. 출시되면 이 페이지에 바로 알려 드릴게요.</p>
+    </details>
+  </div>
+
+  <h2 class="label">더 알아보기</h2>
   <div class="links">
     <a href="privacy.html">개인정보처리방침 →</a>
     <a href="mailto:techiemaru@gmail.com">문의: techiemaru@gmail.com →</a>
   </div>
+
   <footer class="biz">
     <p>상호 테키마루 · 대표자 강성진 · 사업자등록번호 850-44-01354</p>
     <p>통신판매업 신고번호 제2026-서울성북-1326호 · 이메일 techiemaru@gmail.com</p>

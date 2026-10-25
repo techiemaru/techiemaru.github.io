@@ -5,13 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>테키마루</title>
 <meta name="description" content="테키마루는 꼭 필요한 기능만 담은 작고 단순한 앱을 만듭니다.">
+<meta property="og:title" content="테키마루">
+<meta property="og:description" content="꼭 필요한 기능만 담은 작고 단순한 앱을 만듭니다.">
+<meta property="og:url" content="https://techiemaru.github.io/">
 <link rel="icon" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 <main class="home">
-  <header class="brand">테키마루</header>
+  <header><a class="brand" href="/">테키마루</a></header>
 
   <section class="hero">
     <h1>작고 단순한 앱을<br>만듭니다</h1>
@@ -19,38 +22,35 @@
   </section>
 
   <section>
+    <h2 class="label">이렇게 만들어요</h2>
+    <ul class="principles">
+      <li><strong>열면 바로 쓸 수 있게</strong><span>회원가입도, 사용법 안내도 없이 처음 연 순간부터 쓸 수 있어요.</span></li>
+      <li><strong>내 기록은 내 휴대폰에</strong><span>입력한 내용을 서버에 모으지 않아요. 기록은 내 기기 안에만 남아요.</span></li>
+      <li><strong>꼭 필요한 것만</strong><span>기능을 더하기보다 덜어 내서, 자주 쓰는 일이 가장 빠르도록 만들어요.</span></li>
+    </ul>
+  </section>
+
+  <section>
     <h2 class="label">앱</h2>
-    <article class="app-card">
-      <div class="app-head">
+    <div class="app-list">
+      <a class="app-card" href="/todayspend/">
         <img class="app-icon" src="/img/todayspend-icon.png" alt="" width="64" height="64">
         <div>
           <h3>오늘지출</h3>
           <p class="muted">지출만 기록하는 가계부</p>
+          <div class="chips">
+            <span class="chip on">App Store</span>
+            <span class="chip">Google Play 곧 출시</span>
+          </div>
         </div>
-      </div>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
 
-      <ul class="points">
-        <li><strong>회원가입 없이 바로</strong> 금액 누르고 카테고리 고르면 끝이에요.</li>
-        <li><strong>기록은 내 휴대폰 안에만</strong> 카드·계좌 연동도, 서버 저장도 없어요.</li>
-        <li><strong>달력과 그래프로 한눈에</strong> 언제, 어디에 많이 썼는지 바로 보여요.</li>
-      </ul>
-
-      <div class="shots">
-        <img src="/img/todayspend-1-input.jpg" alt="지출 입력 화면" loading="lazy">
-        <img src="/img/todayspend-2-home.jpg" alt="오늘 지출 화면" loading="lazy">
-        <img src="/img/todayspend-4-stats.jpg" alt="통계 화면" loading="lazy">
-      </div>
-
-      <div class="store-buttons">
-        <a class="store-btn" href="https://apps.apple.com/kr/app/id6824415997">App Store에서 받기</a>
-        <span class="store-btn soon">Google Play 곧 출시</span>
-      </div>
-
-      <div class="links">
-        <a href="/todayspend/">자세히 보기 →</a>
-        <a href="/todayspend/privacy.html">개인정보처리방침 →</a>
-      </div>
-    </article>
+  <section class="about">
+    <h2 class="label">테키마루는</h2>
+    <p>테키마루는 매일 손이 가는 작은 도구를 만드는 개발사예요. 앱 하나하나를 오래 두고 쓸 수 있게, 단순하고 믿을 수 있게 만들려고 해요.</p>
   </section>
 
   <section>
@@ -58,6 +58,7 @@
     <div class="links">
       <a href="mailto:techiemaru@gmail.com">techiemaru@gmail.com →</a>
     </div>
+    <p class="muted">앱 사용 중 궁금한 점, 불편한 점, 제안 모두 이 메일로 보내 주세요.</p>
   </section>
 
   <footer class="biz">
