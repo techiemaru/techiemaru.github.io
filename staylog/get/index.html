@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>머문자리 받기</title>
+<meta property="og:title" content="머문자리 - 머문 곳이 일기가 되는 앱">
+<meta property="og:image" content="https://techiemaru.com/img/staylog-icon.png">
+<link rel="icon" href="/favicon.png">
+<link rel="stylesheet" href="/style.css">
+<script>
+// 휴대폰 종류를 보고 맞는 스토어로 바로 보낸다 (컴퓨터는 버튼 두 개를 보여 준다)
+(function () {
+  var ua = navigator.userAgent;
+  var ios = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+  if (ios) location.replace("https://apps.apple.com/kr/app/id6834854785");
+  else if (/Android/.test(ua)) location.replace("https://play.google.com/store/apps/details?id=kr.meewang.staylog");
+})();
+</script>
+</head>
+<body>
+<main>
+  <section class="app-hero">
+    <img class="app-icon" src="/img/staylog-icon.png" alt="" width="88" height="88">
+    <h1>머문자리</h1>
+    <p class="sub">머문 곳이 일기가 되는 앱</p>
+    <div class="store-buttons">
+      <a class="store-btn" href="https://apps.apple.com/kr/app/id6834854785">App Store에서 받기</a>
+      <a class="store-btn" href="https://play.google.com/store/apps/details?id=kr.meewang.staylog">Google Play에서 받기</a>
+    </div>
+    <p class="muted"><a href="/staylog/">앱 소개 보기</a></p>
+  </section>
+</main>
+</body>
+</html>
